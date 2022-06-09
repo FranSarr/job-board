@@ -12,12 +12,19 @@ const Job = ({ job }) => {
           <h4 className='inline'>Posted by</h4>
           <div className='ml-3 -mt-6 inline'>
             <span>
-              <p>
+              {/* <p>
                 <span className='text-base font-medium color-primary underline'>
                   {job.author.name}
                 </span>
-              </p>
-            </span>
+              </p> */}
+               <Link href={`/company/${job.author.id}`}>
+                    <a>
+                      <span className='text-base font-medium color-primary underline'>
+                        {job.author.name}
+                      </span>
+                    </a>
+                </Link>
+            </span> 
           </div>
         </div>
       </div>
