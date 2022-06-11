@@ -1,6 +1,6 @@
 import { getSession, useSession } from 'next-auth/react'
 import prisma from 'lib/prisma'
-import { getJobsPosted, getUser } from 'lib/data.js'
+import { getJobsPosted, getUser, getApplications } from 'lib/data.js'
 import Jobs from 'components/Jobs'
 
 
